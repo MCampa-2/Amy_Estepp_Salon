@@ -1,0 +1,340 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root{
+    --ebony: #45503bff;
+    --gray: #747572ff;
+    --rose-quartz: #b098a4ff;
+    --platinum: rgb(245, 245, 245);
+    --antiflash-white: #e5ebeaff;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+header{
+    height: 100vh;
+}
+
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--gray);
+    transition: .5s;
+    text-transform: uppercase;
+    font-size: .9rem;
+    padding: 5px;
+}
+
+nav .booking-tag{
+    font-size: 1.1rem;
+}
+
+nav a:hover{
+    transform: scale(1.05, 1);
+    color: var(--platinum);
+}
+
+.logo-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.logo-container .logo{
+    width: 100%;
+    max-width: 800px;
+    height: auto;    
+}
+
+.book-now-btn {
+    background-color: transparent;
+    color: var(--gray);
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    margin-top: 10px; /* Adjust as needed */
+    cursor: pointer;
+    transition: 1s;
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.book-now-btn:hover {
+    background-color: black;
+    color: var(--antiflash-white);
+}
+
+
+ /*  Bio Section*/
+
+.bio-section {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--platinum);
+}
+
+.bio-intro {
+    text-align: center;
+    color: var(--gray);
+    font-size: 2rem;
+    font-style: italic;
+    
+}
+
+.owner-images {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.owner-images img {
+    max-width: 200px;
+    border-radius: 50%;
+}
+
+.bio-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.bio-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: var(--gray);
+    font-style: italic;
+}
+
+/* Reviews Section */
+
+.reviews-section{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.reviews{
+    text-align: left;
+    padding: 20px;
+    color: var(--ebony);
+    letter-spacing: 2px;
+}
+
+.review-header{
+    text-align: center;
+    font-size: 2rem;
+    color: var(--ebony);
+    padding-bottom: 20px;
+}
+
+.review{
+    padding: 5px;
+}
+
+
+
+.fa-star{
+    color: var(--rose-quartz);
+}
+
+/* Hours */
+ 
+.contact-section{
+    background-color: var(--platinum);
+    padding: 20px;
+    margin-top: 20px;
+    color: var(--gray);
+    padding: 20px; 
+}
+
+.salon-picture{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.salon{
+    width: 50%;
+    height: auto;
+}
+
+.salon img{
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+}
+
+.hours h2{
+    font-size: 2rem;
+}
+
+.address a{
+    text-decoration: none;
+    color: var(--gray);
+}
+
+.address, .salon, .hours{
+    padding: 10px;
+}
+
+.contact-section h3{
+    line-height: 30px;
+   
+}
+
+.contact{
+    display: flex;
+}
+
+.qr-code{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.qr-code img{
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    text-align: center;
+}
+
+
+
+footer{
+    display: flex;
+    justify-content: center;
+    font-size: 1.rem;
+    color: var(--ebony);
+    padding: 20px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    header {
+        height: auto;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        padding: 10px;
+    }
+
+    .logo-container {
+        align-items: center;
+    }
+
+    .logo-container .logo {
+        max-width: 100%;
+    }
+
+    .book-now-btn {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .bio-intro {
+        font-size: 1.5rem;
+    }
+
+    .owner-images img {
+        max-width: 150px;
+        padding: 20px;
+    }
+
+    .bio-container {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+
+}
+
+
+/* ... (your existing CSS content) ... */
+
+.contact-section {
+    background-color: var(--platinum);
+    padding: 20px;
+    margin-top: 20px;
+    color: var(--gray);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.salon-picture {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.salon,
+.qr-code,
+.hours,
+.address {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.salon img,
+.qr-code img {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+}
+
+/* Adjust font size for address and contact info */
+.address h2,
+.hours h2,
+.address h3,
+.hours h3 {
+    font-size: 1rem;
+}
+
+.address a {
+    font-size: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .salon img,
+    .qr-code img {
+        max-height: none;
+    }
+
+    .contact-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .salon,
+    .qr-code,
+    .hours,
+    .address {
+        width: 100%;
+    }
+}
